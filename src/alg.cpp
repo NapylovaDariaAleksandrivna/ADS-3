@@ -10,7 +10,7 @@ int cbinsearch(int* arr, int size, int value) {
     } else {
       count += 1;
       int cur = r - l / 2 - 1;
-      while (cur >= 0 && cur < r) {
+      while (cur >= 0) {
         if (arr[cur] == value) {
           count += 1;
         } else {
@@ -19,7 +19,7 @@ int cbinsearch(int* arr, int size, int value) {
         cur -= 1;
       }
       cur = r - l / 2 + 1;
-      while (cur >= 0 && cur < r) {
+      while (cur >= 0) {
         if (arr[cur] == value) {
           count += 1;
         } else {
